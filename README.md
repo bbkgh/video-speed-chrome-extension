@@ -67,6 +67,6 @@ A simple Google Chrome extension that sets HTML5 video playback to a user-define
 
 ## License
 
-This project is provided under the **MIT License**. See the [LICENSE](LICENSE) file (if you choose to include one) for details. 
+This project is provided under the **MIT License**.
 
 --- 
