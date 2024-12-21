@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Video Speed Controller</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 10px;
+      }
+      #speedInput {
+        width: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Video Speed Controller</h3>
+    <label for="speedInput">Playback Speed:</label>
+    <input
+      type="number"
+      id="speedInput"
+      step="0.1"
+      min="0.1"
+      value="2"
+    />
+    <script src="popup.js"></script>
+  </body>
+</html>
+
