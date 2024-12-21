@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const speedInput = document.getElementById('speedInput');
   const btn1x = document.getElementById('btn1x');
+  const btn1_5x = document.getElementById('btn1_5x');
   const btn2x = document.getElementById('btn2x');
-  const btn4x = document.getElementById('btn4x');
 
   // Load previously saved speed from storage
   chrome.storage.sync.get(['playbackSpeed'], ({ playbackSpeed }) => {
@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
     speedInput.value = 1;
   });
   
+  btn1_5x.addEventListener('click', () => {
+    setSpeed(1.5);
+    speedInput.value = 1.5;
+  });
+  
   btn2x.addEventListener('click', () => {
     setSpeed(2);
     speedInput.value = 2;
-  });
-  
-  btn4x.addEventListener('click', () => {
-    setSpeed(4);
-    speedInput.value = 4;
   });
 
   // Helper function to update speed in storage and content script
