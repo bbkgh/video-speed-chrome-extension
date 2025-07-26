@@ -1,9 +1,15 @@
 (function() {
-  // Function that sets the video playback speed
+  // Function that sets the video and audio playback speed
   function setPlaybackSpeed(rate) {
     const videos = document.querySelectorAll('video');
+    const audios = document.querySelectorAll('audio');
+    
     videos.forEach(video => {
       video.playbackRate = rate;
+    });
+    
+    audios.forEach(audio => {
+      audio.playbackRate = rate;
     });
   }
 

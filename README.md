@@ -3,14 +3,14 @@
 ## 🤖 All codes are generated with O1 model 🤖
 
 
-A simple Google Chrome extension that sets HTML5 video playback to a user-defined speed (default: **2x**). Works on **all websites** containing `<video>` elements.
+A simple Google Chrome extension that sets HTML5 video and audio playback to a user-defined speed (default: **2x**). Works on **all websites** containing `<video>` or `<audio>` elements.
 
 ## Features
 
-- **Global** support for HTML5 videos on any site.
+- **Global** support for HTML5 videos and audio on any site.
 - **Configurable** speed via the extension's popup (default is 2x).
 - **Persistent** across sessions (saves your chosen speed in Chrome's storage).
-- **Auto-apply** playback speed whenever a new video element is added (thanks to a MutationObserver).
+- **Auto-apply** playback speed whenever a new video or audio element is added (thanks to a MutationObserver).
 
 ## Folder Structure
 
@@ -48,17 +48,17 @@ A simple Google Chrome extension that sets HTML5 video playback to a user-define
 
 ## Usage
 
-1. **Default speed** is 2x. Any `<video>` element on pages you visit will automatically start playing at 2x speed.
+1. **Default speed** is 2x. Any `<video>` or `<audio>` element on pages you visit will automatically start playing at 2x speed.
 2. **Change speed**:
    - Click the extension icon in your Chrome toolbar.
    - In the popup, you’ll see a numeric field labeled “Playback Speed.” 
    - Enter a new speed (e.g., `1.5` or `3`) and press **Enter** or leave the field.
-   - The new speed is applied instantly to all videos on the current page and is remembered for all future pages.
+   - The new speed is applied instantly to all videos and audio on the current page and is remembered for all future pages.
 
 ## Notes
 
 - This extension relies on the **Chrome Storage Sync** API to store your preferred playback speed across browser sessions.
-- A **MutationObserver** is used to detect when new video elements are added or replaced on modern web pages, ensuring your chosen speed is reapplied if a new video appears.
+- A **MutationObserver** is used to detect when new video or audio elements are added or replaced on modern web pages, ensuring your chosen speed is reapplied if new media appears.
 
 ## Contributing
 
