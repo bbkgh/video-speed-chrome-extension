@@ -70,3 +70,4 @@ A simple Google Chrome extension that sets HTML5 video and audio playback to a u
 This project is provided under the **MIT License**.
 
 --- 
+![Extension Screenshot](extension-picture.jpg)
